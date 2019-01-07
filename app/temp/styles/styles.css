@@ -1260,6 +1260,11 @@ Instead edit gulp/templates/sprite */
   transform: scale(1);
 }
 
+.icon--trung-nguyen {
+  width: 142.4px;
+  height: 59.53px;
+}
+
 .primary-nav {
   padding-top: 10px;
 }
