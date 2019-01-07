@@ -1,0 +1,58 @@
+.products {
+    grid-column: center-start / center-end;
+    margin: 15rem 0;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 7rem;
+
+
+}
+
+.product {
+    background-color: $mainGray;
+    height: 15rem;
+    position: relative;
+
+    &__image {
+      object-fit: cover;
+      min-height: 100%;
+    }
+
+    &__text-content {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &__title {
+        background-color: $mainBlue;
+        color: $mainWhite;
+        text-align: center;
+        padding: .5rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    @mixin atMedium {
+      height: 20rem;
+      width: 20rem;
+      text-align: left;
+      margin-top: 1em;
+      font-size: 1.875rem;
+    }
+
+    @mixin atLarge {
+      height: 15rem;
+      width: 15rem;
+      text-align: left;
+      margin-top: 1em;
+      font-size: 1.875rem;
+      padding: .45rem;
+    }
+}
+
+.product:hover {
+  background-color: black;
+}
