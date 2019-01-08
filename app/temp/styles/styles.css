@@ -1520,8 +1520,16 @@ Instead edit gulp/templates/sprite */
   transform: translateX(-50%);
 }
 
+.product__center {
+  text-align: center;
+}
+
+.product__relative {
+  position: relative;
+}
+
 .product__title {
-  background-color: #2f5572;
+  background-color: rgba(47,85,114,.7);
   color: #d4e4f9;
   text-align: center;
   padding: .5rem;

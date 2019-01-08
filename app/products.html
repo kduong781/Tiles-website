@@ -44,7 +44,7 @@
   <div class="page-section wrapper" ng-app="myApp" ng-controller="myCtrl">
     <h2 class="section-title" ng-show="view=='Type'"><span class="icon icon--star section-title__icon"></span> Our <strong>Products</strong></h2>
     <h2 class="section-title" ng-show="view=='Products'"><span class="icon icon--star section-title__icon"></span>{{typeName}}</h2>
-    <a ng-show="view=='Products'" class="btn" ng-click="goBack();">Back &larr;</a>
+    <a ng-show="view=='Products' || view=='Product'" class="btn" ng-click="goBack();">Back &larr;</a>
 
     <div class="row wrapper">
 
@@ -69,7 +69,9 @@
       <div id="product" ng-show="view=='Product'">
         <div class="row row--gutters wrapper">
           <div class="row__large-6">
-            <img ng-src="{{currentProduct.link}}">
+            <div class="product__center">
+              <img ng-src="{{currentProduct.link}}">
+            </div>
           </div>
           <div class="row__large-6">
             <h1 class="product__title">{{currentProduct.name}}</h1>

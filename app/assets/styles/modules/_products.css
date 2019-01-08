@@ -26,8 +26,16 @@
         transform: translateX(-50%);
     }
 
+    &__center {
+      text-align: center;
+    }
+
+    &__relative {
+      position: relative;
+    }
+
     &__title {
-        background-color: $mainBlue;
+        background-color: rgba($mainBlue,.7);
         color: $mainWhite;
         text-align: center;
         padding: .5rem;
