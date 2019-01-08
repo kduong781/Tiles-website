@@ -42,90 +42,43 @@
   </header>
 
   <div class="page-section wrapper" ng-app="myApp" ng-controller="myCtrl">
-    <h2 class="section-title"><span class="icon icon--star section-title__icon"></span> Our <strong>Products</strong></h2>
+    <h2 class="section-title" ng-show="view=='Type'"><span class="icon icon--star section-title__icon"></span> Our <strong>Products</strong></h2>
+    <h2 class="section-title" ng-show="view=='Products'"><span class="icon icon--star section-title__icon"></span>{{typeName}}</h2>
+    <a ng-show="view=='Products'" class="btn" ng-click="goBack();">Back &larr;</a>
 
     <div class="row wrapper">
 
-      <div class="row__large-4 row__medium-6 product">
-          <img class="product__image" src="./assets/images/gal-1.jpeg" alt="Couple walking down a street.">
+      <div class="row__large-4 row__medium-6 product" ng-repeat="type in types" ng-click="showProducts(type.name,type.products)" ng-show="view=='Type'">
+          <img class="product__image" ng-src="{{type.link}}" alt="Couple walking down a street.">
           <div class="product__text-content">
             <div class="product__title">
-              Type
+              {{type.name}}
             </div>
           </div>
       </div>
 
-      <div class="row__large-4 row__medium-6 product">
-          <img class="product__image" src="./assets/images/gal-2.jpeg" alt="Couple walking down a street.">
+      <div class="row__large-4 row__medium-6 product" ng-repeat="product in products" ng-click="showProduct(product)" ng-show="view=='Products'">
+          <img class="product__image" ng-src="{{product.link}}" alt="Couple walking down a street.">
           <div class="product__text-content">
             <div class="product__title">
-              Type
+              {{product.name}}
             </div>
           </div>
       </div>
 
-      <div class="row__large-4 row__medium-6 product">
-          <img class="product__image" src="./assets/images/gal-3.jpeg" alt="Couple walking down a street.">
-          <div class="product__text-content">
-            <div class="product__title">
-              Type
-            </div>
+      <div id="product" ng-show="view=='Product'">
+        <div class="row row--gutters wrapper">
+          <div class="row__large-6">
+            <img ng-src="{{currentProduct.link}}">
           </div>
+          <div class="row__large-6">
+            <h1 class="product__title">{{currentProduct.name}}</h1>
+            <h2 class="product__subtitle">{{typeName}}</h2>
+            <p class="product__description">{{currentProduct.desc}}</p>
+          </div>
+        </div>
       </div>
 
-      <div class="row__large-4 row__medium-6 product">
-          <img class="product__image" src="./assets/images/gal-4.jpeg" alt="Couple walking down a street.">
-          <div class="product__text-content">
-            <div class="product__title">
-              Type
-            </div>
-          </div>
-      </div>
-
-      <div class="row__large-4 row__medium-6 product">
-          <img class="product__image" src="./assets/images/gal-5.jpeg" alt="Couple walking down a street.">
-          <div class="product__text-content">
-            <div class="product__title">
-              Type
-            </div>
-          </div>
-      </div>
-
-      <div class="row__large-4 row__medium-6 product">
-          <img class="product__image" src="./assets/images/gal-6.jpeg" alt="Couple walking down a street.">
-          <div class="product__text-content">
-            <div class="product__title">
-              Type
-            </div>
-          </div>
-      </div>
-
-      <div class="row__large-4 row__medium-6 product">
-          <img class="product__image" src="./assets/images/gal-7.jpeg" alt="Couple walking down a street.">
-          <div class="product__text-content">
-            <div class="product__title">
-              Type
-            </div>
-          </div>
-      </div>
-
-      <div class="row__large-4 row__medium-6 product">
-          <img class="product__image" src="./assets/images/gal-8.jpeg" alt="Couple walking down a street.">
-          <div class="product__text-content">
-            <div class="product__title">
-              Type
-            </div>
-          </div>
-      </div>
-
-      <div class="row__large-4 row__medium-6 product">
-          <img class="product__image" src="./assets/images/gal-9.jpeg" alt="Couple walking down a street.">
-          <div class="product__text-content">
-            <div class="product__title">
-              Type
-            </div>
-          </div>
-      </div>
     </div>
   </div>
 
