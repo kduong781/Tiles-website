@@ -17,6 +17,9 @@
     &__image {
       object-fit: cover;
       min-height: 80%;
+      max-height: 80%;
+      display:block;
+      margin:auto;
     }
 
     &__text-content {
@@ -62,5 +65,5 @@
 }
 
 .product:hover {
-  background-color: black;
+  background-color: rgba(0,0,0,.3);
 }

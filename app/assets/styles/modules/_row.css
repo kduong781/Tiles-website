@@ -2,6 +2,10 @@
 
   @mixin clearfix;
 
+  &--relative {
+      position: relative;
+  }
+
   &--t-padding {
     padding-top: 80px;
   }
