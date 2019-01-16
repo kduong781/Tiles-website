@@ -37,7 +37,7 @@ app.controller('myCtrl', function($scope) {
       new Product("P-2505V2","./assets/images/floor/PLAZA/25x40/P-2505V2-fill-170x271.jpg","type1 product1"),
       new Product("P-2507V2","./assets/images/floor/PLAZA/25x40/P-2507V2-fill-170x274.jpg","type1 product1"),
       new Product("P-2508V1","./assets/images/floor/PLAZA/25x40/P-2508V1-fill-170x271.jpg","type1 product1"),
-      new Product("P-2510","./assets/images/floor/PLAZA/25x40/P-2510-fill-170x276.jpg","type1 product1"),
+      new Product("P-2510","./assets/images/floor/PLAZA/25x40/p-2510-fill-170x276.jpg","type1 product1"),
       new Product("P-2510V1","./assets/images/floor/PLAZA/25x40/P-2510V1-fill-170x274.jpg","type1 product1"),
       new Product("P-2510V2","./assets/images/floor/PLAZA/25x40/P-2510V2-fill-170x275.jpg","type1 product1"),
     ];
