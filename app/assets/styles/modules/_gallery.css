@@ -90,3 +90,12 @@
         display: block;
     }
 }
+
+.galleryHome {
+    display: flex;
+
+    &__photo {
+        width: 100%;
+        display: block;
+    }
+}

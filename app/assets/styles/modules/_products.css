@@ -16,14 +16,14 @@
 
     &__image {
       object-fit: cover;
-      min-height: 100%;
+      min-height: 80%;
     }
 
     &__text-content {
-        position: absolute;
+        /* position: absolute;
         bottom: 0;
         left: 50%;
-        transform: translateX(-50%);
+        transform: translateX(-50%); */
     }
 
     &__center {
@@ -52,7 +52,7 @@
     }
 
     @mixin atLarge {
-      height: 15rem;
+      height: 19rem;
       width: 15rem;
       text-align: left;
       margin-top: 1em;

@@ -1,6 +1,6 @@
 .site-header {
   padding: 10px 0;
-  position: absolute;
+  /* position: absolute; */
   width: 100%;
   z-index: 2;
   transition: background-color .3s ease-out;
@@ -10,9 +10,9 @@
   }
 
   @mixin atMedium {
-    position: fixed;
-    background-color: rgba($mainBlue, .3);
-
+    /* position: fixed; */
+    /* background-color: rgba($mainBlue, .3); */
+    background-color: rgba(23, 51, 72, .85);
     &--dark {
       background-color: rgba(23, 51, 72, .85);
     }
@@ -31,6 +31,7 @@
 
   &__logo {
     position: absolute;
+    z-index:100;
     top: 0;
     left: 50%;
     transform: translateX(-50%) scale(.8);

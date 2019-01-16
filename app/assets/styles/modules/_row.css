@@ -40,6 +40,11 @@
       margin-bottom: 0;
     }
 
+    &__medium-3 {
+      float: left;
+      width: 25%;
+    }
+
     &__medium-4 {
       float: left;
       width: 33.33%;
@@ -69,6 +74,11 @@
 
     &__b-margin-until-large {
       margin-bottom: 0;
+    }
+
+    &__large-3 {
+      float: left;
+      width: 25%;
     }
 
     &__large-4 {
