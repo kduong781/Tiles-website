@@ -4,14 +4,18 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <title>Tiles</title>
   <meta name="keywords" content="Tiles">
   <meta name="description" content="Cool tiles to buy">
 
-  <link rel="stylesheet" href="assets/styles/style-cded538de2.css"/>
+  <!-- build:css assets/styles/style.css-->
+  <link rel="stylesheet" href="temp/styles/styles.css">
+  <!-- endbuild -->
+
 </head>
 <body>
-  <header class="site-header">
+  <header class="site-header site-header--dark">
     <div class="wrapper">
       <a href="index.html"><div class="site-header__logo">
         <div class="site-header__logo__graphic icon--trung-nguyen"><img class="site-header__img" src="./assets/images/logo2.png"></div>
@@ -36,46 +40,10 @@
     </div>
   </header>
 
-  <div class="large-hero">
 
-    <picture>
-      <source srcset="assets/images/home-tile.jpg 1920w, assets/images/home-tile.jpg 3840w" media="(min-width: 1380px)">
-      <source srcset="assets/images/home-tile.jpg 1380w, assets/images/home-tile.jpg 2760w" media="(min-width: 990px)">
-      <source srcset="assets/images/home-tile.jpg 990w, assets/images/home-tile.jpg 1980w" media="(min-width: 640px)">
-      <img srcset="assets/images/home-tile.jpg 640w, assets/images/home-tile.jpg 1280w" alt="Home with Tiles" class="large-hero__image">
-    </picture>
-
-    <div class="large-hero__text-content">
-      <div class="wrapper">
-        <h1 class="large-hero__title">Imagine Greatness.</h1>
-        <h2 class="large-hero__subtitle">One click away.</h2>
-        <p class="large-hero__description">We create high quality tiles using best materials.</p>
-        <p><a href="products.html" class="btn btn--orange btn--large">Get Started Today</a></p>
-      </div>
-    </div>
-  </div>
-
-  <div class="page-section page-section--no-padding">
-    <div class="row">
-      <div class="story__pictures row__medium-6 row__medium-6">
-        <img src="assets/images/gal-1.jpeg" alt="Couple with new house" class="story__img--1">
-        <img src="assets/images/gal-2.jpeg" alt="New house" class="story__img--2">
-      </div>
-
-      <div class="story__content row__medium-6 row__medium-6">
-          <h3 class="heading-3 mb-sm">Happy Customers</h3>
-          <h2 class="heading-2 heading-2--dark mb-md">&ldquo;The best decision of our lives&rdquo;</h2>
-          <p class="story__text">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur distinctio necessitatibus pariatur voluptatibus. Quidem consequatur harum volupta!
-          </p>
-          <a href="product.html"><button class="btn">Find your tile</button></a>
-      </div>
-    </div>
-  </div>
-
-  <!-- <div id="gallery" class="page-section" data-matching-link="#features-link">
+  <div id="gallery" class="page-section" data-matching-link="#features-link">
     <div class="wrapper">
-      <h2 class="section-title"><span class="icon icon--star section-title__icon"></span> Our <strong>Gallery</strong></h2>
+      <h2 class="section-title"><span class="icon icon--star section-title__icon"></span> Our <strong>Kitchen</strong></h2>
 
       <div class="gallery">
 
@@ -95,43 +63,24 @@
         <figure class="gallery__item gallery__item--14"><img src="assets/images/gal-14.jpeg" alt="Gallery image 14" class="gallery__img"></figure>
       </div>
     </div>
-  </div> -->
-
-  <div class="page-section page-section--no-padding">
-    <div class="row">
-      <div class="row__medium-3 row--relative">
-        <a href="gallery.html">
-          <img class="gallery__img--link" src="assets/images/gal-1.jpeg" alt="Couple with new house">
-          <div class="gallery__img--category-title">Floor</div>
-        </a>
-      </div>
-
-      <div class="row__medium-3 row--relative">
-        <a href="kitchen-gallery.html">
-          <img class="gallery__img--link" src="assets/images/gal-4.jpeg" alt="Couple with new house">
-          <div class="gallery__img--category-title">Kitchen</div>
-        </a>
-      </div>
-      <div class="row__medium-3 row--relative">
-        <a href="wall-gallery.html">
-          <img class="gallery__img--link" src="assets/images/gal-1.jpeg" alt="Couple with new house">
-          <div class="gallery__img--category-title">Wall</div>
-        </a>
-      </div>
-      <div class="row__medium-3 row--relative">
-        <a href="bathroom-gallery.html">
-          <img class="gallery__img--link" src="assets/images/gal-4.jpeg" alt="Couple with new house">
-          <div class="gallery__img--category-title">Bathroom</div>
-        </a>
-      </div>
-    </div>
   </div>
+
+
+
+
+
+
+
+
+
 
   <footer class="site-footer">
     <div class="wrapper">
       <p><span class="site-footer__text">Copyright &copy; 2019 Trung Nguyen Plaza. All rights reserved.</span> <a href="contact.html" class="btn btn--orange">Contact Us</a></p>
     </div>
   </footer>
-  <script src="assets/scripts/App-12084a1bbc.js"></script>
+  <!-- build:js assets/scripts/App.js-->
+  <script src="/temp/scripts/App.js"></script>
+  <!-- endbuild -->
 </body>
 </html>
